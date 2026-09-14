@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tutions Wallah | Quality Education in Muzaffarpur</title>
+
+  <meta name="description"
+    content="Tutions Wallah provides quality tuition for Classes 1 to 12 and focused Sainik School preparation in Muzaffarpur.">
+
+  <meta name="keywords"
+    content="Tutions Wallah, tuition Muzaffarpur, tuition classes, Sainik School preparation, classes 1 to 12">
+
+  <meta name="theme-color" content="#174ea6">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #18212f;
+      background: #ffffff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    nav {
+      max-width: 1150px;
+      margin: auto;
+      padding: 15px 20px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 800;
+      color: #174ea6;
+    }
+
+    .logo span {
+      color: #f57c00;
+    }
+
+    nav a {
+      color: #18212f;
+      margin-left: 22px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #174ea6;
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        linear-gradient(135deg,
+          #174ea6,
+          #2867c7);
+
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+
+      padding: 7px 16px;
+      border-radius: 30px;
+
+      margin-bottom: 20px;
+
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 70px);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #ffb15c;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 760px;
+      margin: auto auto 30px;
+      opacity: 0.95;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 8px;
+
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-orange {
+      background: #f57c00;
+      color: white;
+    }
+
+    .btn-white {
+      background: white;
+      color: #174ea6;
+    }
+
+    /* GENERAL */
+
+    section {
+      max-width: 1150px;
+      margin: auto;
+      padding: 75px 20px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .title h2 {
+      font-size: 36px;
+      color: #174ea6;
+      margin-bottom: 8px;
+    }
+
+    .title p {
+      color: #657080;
+      font-size: 17px;
+    }
+
+    /* STATS */
+
+    .stats {
+      max-width: 1000px;
+      margin: -35px auto 0;
+
+      display: grid;
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stat {
+      background: white;
+      padding: 25px;
+      text-align: center;
+
+      border-radius: 14px;
+
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.10);
+    }
+
+    .stat h3 {
+      color: #174ea6;
+      font-size: 28px;
+    }
+
+    .stat p {
+      color: #657080;
+    }
+
+    /* COURSES */
+
+    .cards {
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+      gap: 20px;
+    }
+
+    .card {
+      padding: 28px;
+
+      border-radius: 15px;
+
+      background: #f5f8fc;
+
+      border: 1px solid #e8edf5;
+
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #174ea6;
+      margin-bottom: 8px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #657080;
+    }
+
+    /* WHY US */
+
+    .about {
+      background: #eef5ff;
+      max-width: none;
+    }
+
+    .about-inner {
+      max-width: 1150px;
+      margin: auto;
+      padding: 75px 20px;
+    }
+
+    .why-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+      gap: 20px;
+    }
+
+    .why-item {
+      background: white;
+      padding: 25px;
+
+      border-radius: 14px;
+
+      box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .why-item h3 {
+      color: #174ea6;
+      margin-bottom: 8px;
+    }
+
+    .why-item p {
+      color: #657080;
+    }
+
+    /* APPROACH */
+
+    .approach {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 45px;
+
+      align-items: center;
+    }
+
+    .approach-text h2 {
+      color: #174ea6;
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .approach-text p {
+      color: #657080;
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .check-list li {
+      margin: 12px 0;
+      font-weight: 600;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: #f57c00;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .approach-box {
+      background: #174ea6;
+      color: white;
+
+      padding: 40px;
+      border-radius: 18px;
+    }
+
+    .approach-box h3 {
+      font-size: 27px;
+      margin-bottom: 15px;
+    }
+
+    /* SAINIK */
+
+    .sainik {
+      background: linear-gradient(135deg,
+          #fff7ed,
+          #fff);
+    }
+
+    .sainik-box {
+      max-width: 900px;
+      margin: auto;
+
+      text-align: center;
+
+      padding: 45px 25px;
+
+      border: 1px solid #ffe0bd;
+      border-radius: 18px;
+    }
+
+    .sainik-box h2 {
+      color: #174ea6;
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .sainik-box p {
+      color: #657080;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    /* FAQ */
+
+    .faq {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    details {
+      background: #f5f8fc;
+      margin-bottom: 12px;
+
+      padding: 18px 20px;
+
+      border-radius: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: #174ea6;
+    }
+
+    details p {
+      margin-top: 12px;
+      color: #657080;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 25px;
+    }
+
+    .contact-box {
+      background: #f5f8fc;
+      padding: 30px;
+
+      border-radius: 15px;
+    }
+
+    .contact-box h3 {
+      color: #174ea6;
+      font-size: 23px;
+      margin-bottom: 15px;
+    }
+
+    .contact-box p {
+      margin: 12px 0;
+    }
+
+    .contact-box a {
+      color: #174ea6;
+      font-weight: 700;
+    }
+
+    .phone-list {
+      margin: 15px 0;
+    }
+
+    .phone-list a {
+      display: block;
+      font-size: 20px;
+      margin: 8px 0;
+    }
+
+    /* FINAL CTA */
+
+    .cta {
+      background: #174ea6;
+      color: white;
+
+      text-align: center;
+
+      max-width: none;
+    }
+
+    .cta-inner {
+      max-width: 900px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    .cta h2 {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      font-size: 18px;
+      opacity: 0.9;
+      margin-bottom: 25px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer p {
+      margin: 5px 0;
+      opacity: 0.8;
+    }
+
+    /* MOBILE BUTTONS */
+
+    .mobile-actions {
+      display: none;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 70px 18px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+      }
+
+      .approach {
+        grid-template-columns: 1fr;
+      }
+
+      .contact {
+        grid-template-columns: 1fr;
+      }
+
+      .cta h2 {
+        font-size: 30px;
+      }
+
+      .mobile-actions {
+        position: fixed;
+        display: flex;
+
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+
+        z-index: 200;
+
+        gap: 8px;
+      }
+
+      .mobile-actions a {
+        flex: 1;
+
+        text-align: center;
+
+        padding: 13px;
+
+        border-radius: 10px;
+
+        font-weight: 800;
+
+        box-shadow:
+          0 5px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .call-btn {
+        background: white;
+        color: #174ea6;
+      }
+
+      .wa-btn {
+        background: #25D366;
+        color: white;
+      }
+
+      footer {
+        padding-bottom: 90px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <nav>
+
+      <div class="logo">
+        Tutions <span>Wallah</span>
+      </div>
+
+      <div>
+
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">Why Us</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-badge">
+        Quality Education • Personal Attention • Better Learning
+      </div>
+
+      <h1>
+        Building Strong Foundations.<br>
+        <span>Creating Confident Learners.</span>
+      </h1>
+
+      <p>
+        Quality tuition for Classes 1 to 12 and focused
+        Sainik School entrance preparation in Muzaffarpur.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a class="btn btn-orange" href="tel:+919508718596">
+          📞 Call Now
+        </a>
+
+        <a class="btn btn-white"
+          href="https://wa.me/919508718596?text=Hello%20Tutions%20Wallah%2C%20I%20found%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20tuition%20classes."
+          target="_blank" rel="noopener">
+          💬 WhatsApp Us
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- STATS -->
+
+    <div class="stats">
+
+      <div class="stat">
+        <h3>Classes 1–12</h3>
+        <p>Academic Support</p>
+      </div>
+
+      <div class="stat">
+        <h3>Concept Focused</h3>
+        <p>Learning Approach</p>
+      </div>
+
+      <div class="stat">
+        <h3>Sainik School</h3>
+        <p>Entrance Preparation</p>
+      </div>
+
+    </div>
+
+
+    <!-- COURSES -->
+
+    <section id="courses">
+
+      <div class="title">
+
+        <h2>Our Courses</h2>
+
+        <p>
+          Learning support designed for students at every level.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+        <div class="card">
+
+          <div class="card-icon">📚</div>
+
+          <h3>Classes 1–5</h3>
+
+          <p>
+            Strong foundations in core subjects with
+            regular academic guidance and practice.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">🎯</div>
+
+          <h3>Classes 6–8</h3>
+
+          <p>
+            Concept-focused tuition designed to improve
+            understanding and prepare students for school examinations.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">📝</div>
+
+          <h3>Classes 9–10</h3>
+
+          <p>
+            Focused learning, regular practice and
+            board-examination preparation.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">🎓</div>
+
+          <h3>Classes 11–12</h3>
+
+          <p>
+            Subject-focused guidance for senior secondary
+            students with emphasis on clear concepts.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">🏆</div>
+
+          <h3>Sainik School Preparation</h3>
+
+          <p>
+            Dedicated preparation and practice for
+            Sainik School entrance examinations.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHY US -->
+
+    <div class="about" id="about">
+
+      <div class="about-inner">
+
+        <div class="title">
+
+          <h2>Why Choose Tutions Wallah?</h2>
+
+          <p>
+            A focused learning environment for better understanding
+            and consistent academic growth.
+          </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+          <div class="why-item">
+
+            <h3>📚 Quality Education</h3>
+
+            <p>
+              Focus on clear concepts, meaningful learning
+              and strong academic foundations.
+            </p>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <h3>👨‍🏫 Dedicated Faculty</h3>
+
+            <p>
+              Guidance designed to help students understand
+              difficult topics with greater confidence.
+            </p>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <h3>🎯 Concept-Based Learning</h3>
+
+            <p>
+              We encourage students to understand concepts
+              instead of depending only on memorisation.
+            </p>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <h3>📝 Regular Practice</h3>
+
+            <p>
+              Consistent practice helps students identify
+              areas that need more attention.
+            </p>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <h3>📈 Academic Improvement</h3>
+
+            <p>
+              Structured learning and regular revision can
+              help students stay consistent with their studies.
+            </p>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <h3>👨‍👩‍👧 Supportive Environment</h3>
+
+            <p>
+              A positive environment where students can learn,
+              ask questions and improve with confidence.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- APPROACH -->
+
+    <section id="approach">
+
+      <div class="approach">
+
+        <div class="approach-text">
+
+          <h2>Our Teaching Approach</h2>
+
+          <p>
+            Every student learns differently. Our approach is
+            centered around understanding concepts, regular
+            practice and building confidence step by step.
+          </p>
+
+          <p>
+            We aim to create a learning environment where students
+            are encouraged to ask questions and develop a stronger
+            understanding of their subjects.
+          </p>
+
+
+          <ul class="check-list">
+
+            <li>Clear explanation of concepts</li>
+
+            <li>Regular revision and practice</li>
+
+            <li>Exam-oriented preparation</li>
+
+            <li>Focus on student understanding</li>
+
+            <li>Consistent academic guidance</li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="approach-box">
+
+          <h3>
+            Learn Better. Practice More. Grow With Confidence.
+          </h3>
+
+          <p>
+            Our goal is simple — help students build strong
+            academic fundamentals and approach their studies
+            with greater confidence.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SAINIK SCHOOL -->
+
+    <section class="sainik">
+
+      <div class="sainik-box">
+
+        <h2>
+          🏆 Sainik School Preparation
+        </h2>
+
+        <p>
+          Focused preparation for students aiming to appear
+          for Sainik School entrance examinations, with attention
+          to concepts, practice and examination readiness.
+        </p>
+
+        <br>
+
+        <a class="btn btn-orange"
+          href="https://wa.me/919508718596?text=Hello%20Tutions%20Wallah%2C%20I%20want%20information%20about%20Sainik%20School%20preparation."
+          target="_blank" rel="noopener">
+          Enquire on WhatsApp
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section>
+
+      <div class="title">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <p>
+          Some common questions from students and parents.
+        </p>
+
+      </div>
+
+
+      <div class="faq">
+
+        <details>
+
+          <summary>
+            Which classes do you provide tuition for?
+          </summary>
+
+          <p>
+            We provide academic tuition support for Classes 1
+            to 12 along with dedicated Sainik School preparation.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Do you provide Sainik School preparation?
+          </summary>
+
+          <p>
+            Yes. We provide focused preparation and practice
+            for Sainik School entrance examinations.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            How can I enquire about admission?
+          </summary>
+
+          <p>
+            You can call us or send a WhatsApp message using
+            the contact options on this website.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Where is Tutions Wallah located?
+          </summary>
+
+          <p>
+            Tutions Wallah is located at Brahampura Badhai Tola,
+            Muzaffarpur, Bihar.
+          </p>
+
+        </details>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+      <div class="title">
+
+        <h2>Get In Touch</h2>
+
+        <p>
+          Contact us for admission and course information.
+        </p>
+
+      </div>
+
+
+      <div class="contact">
+
+
+        <div class="contact-box">
+
+          <h3>Tutions Wallah</h3>
+
+          <p>
+            📍 Brahampura Badhai Tola,
+            Muzaffarpur, Bihar
+          </p>
+
+
+          <div class="phone-list">
+
+            <strong>📞 Contact Numbers</strong>
+
+            <a href="tel:+919508718596">
+              9508718596
+            </a>
+
+            <a href="tel:+917070474092">
+              7070474092
+            </a>
+
+          </div>
+
+
+          <p>
+
+            💬
+
+            <a href="https://wa.me/919508718596?text=Hello%20Tutions%20Wallah%2C%20I%20would%20like%20to%20know%20more%20about%20your%20classes."
+              target="_blank" rel="noopener">
+              Chat on WhatsApp
+            </a>
+
+          </p>
+
+        </div>
+
+
+        <div class="contact-box">
+
+          <h3>Admissions</h3>
+
+          <p>
+            Interested in joining Tutions Wallah?
+            Send us a message and we'll help you with
+            course and admission information.
+          </p>
+
+          <br>
+
+          <a class="btn btn-orange"
+            href="https://wa.me/919508718596?text=Hello%20Tutions%20Wallah%2C%20I%20am%20interested%20in%20admission.%20Please%20share%20the%20details."
+            target="_blank" rel="noopener">
+            Enquire Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL CTA -->
+
+    <div class="cta">
+
+      <div class="cta-inner">
+
+        <h2>
+          Give Your Learning a Stronger Direction.
+        </h2>
+
+        <p>
+          Connect with Tutions Wallah for tuition and
+          Sainik School preparation in Muzaffarpur.
+        </p>
+
+        <a class="btn btn-orange"
+          href="https://wa.me/919508718596?text=Hello%20Tutions%20Wallah%2C%20I%20found%20your%20website%20and%20would%20like%20to%20know%20more."
+          target="_blank" rel="noopener">
+          💬 Start a Conversation
+        </a>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 Tutions Wallah. All rights reserved.
+    </p>
+
+    <p>
+      Brahampura Badhai Tola, Muzaffarpur, Bihar
+    </p>
+
+    <p>
+      📞 9508718596 &nbsp; | &nbsp; 7070474092
+    </p>
+
+  </footer>
+
+
+  <!-- MOBILE ACTION BAR -->
+
+  <div class="mobile-actions">
+
+    <a class="call-btn" href="tel:+919508718596">
+      📞 Call
+    </a>
+
+    <a class="wa-btn"
+      href="https://wa.me/919508718596?text=Hello%20Tutions%20Wallah%2C%20I%20found%20your%20website%20and%20would%20like%20to%20know%20more."
+      target="_blank" rel="noopener">
+      💬 WhatsApp
+    </a>
+
+  </div>
+
+</body>
+
+</html>
